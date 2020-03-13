@@ -9,4 +9,400 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: #333333;
+}
+
+.top {
+  color: #d8d8d8;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: contain;
+}
+
+.top ul {
+  color: rgb(29 209 246);
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  font-size: small;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.top button {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.top ul li {
+  padding-left: 1rem;
+}
+
+.top h3 {
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+
+.two {
+  color: #d8d8d8;
+  margin-bottom: 4.5rem;
+  justify-content: center;
+}
+
+.two h1 {
+  font-size: 2rem;
+}
+
+.two > h1 {
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+span {
+  color: #ff5e5e;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation ul {
+  color: #d8d8d8;
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  font-size: small;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.navigation > ul > li {
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+
+main {
+  grid-template-columns: 17% 17% 16% 16% 17% 17%;
+  grid-template-rows: 6;
+  display: grid;
+}
+
+.bottom {
+  color: #d8d8d8;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+footer {
+  text-align: center;
+  margin: 2rem;
+  margin-bottom: 4rem;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: 0;
+  height: 3rem;
+  width: 8rem;
+}
+
+div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: auto;
+  margin: auto;
+  margin: 1rem;
+}
+
+.img-1 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row: 1;
+  background-image: url('./images/skull.jpg');
+}
+
+.img-2 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row: 2;
+  background-image: url('./images/pumpkin.jpg');
+}
+
+.img-3 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row: 3;
+  background-image: url('./images/door.jpg');
+}
+
+.img-4 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row: 4;
+  background-image: url('./images/jacko.jpg');
+}
+
+.img-5 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row: 5;
+  background-image: url('./images/trooper.jpeg');
+}
+
+.img-6 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row: 6;
+  background-image: url('./images/gords.jpeg');
+}
+
+.img-7 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row: 7;
+  background-image: url('./images/candle.jpeg');
+}
+.img-8 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row: 8;
+  background-image: url('./images/oldpumpkin.jpeg');
+}
+
+@media (max-width: 400px) {
+  .top ul {
+    visibility: hidden;
+  }
+
+  .top button {
+    visibility: hidden;
+  }
+
+  .top h3 {
+    width: 30rem;
+    padding-right: 1;
+    padding-left: 1;
+  }
+
+  .top {
+    margin-bottom: 3rem;
+  }
+
+  .two {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 760px) {
+  .top {
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 100;
+    display: grid;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  .top ul {
+    margin: 0;
+  }
+
+  .top button {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .two h1 {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  div {
+    height: 50vh;
+    margin: 0rem;
+  }
+
+  .img-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1;
+    margin: 0.5rem 0.5rem 0.5rem 1rem;
+  }
+
+  .img-2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row: 1;
+    margin: 0.5rem 1rem 0.5rem 0.5rem;
+  }
+
+  .img-3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 2;
+    margin: 0.5rem 0.5rem 0.5rem 1rem;
+  }
+
+  .img-4 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row: 2;
+    margin: 0.5rem 1rem 0.5rem 0.5rem;
+  }
+
+  .img-5 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 3;
+    margin: 0.5rem 0.5rem 0.5rem 1rem;
+  }
+
+  .img-6 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row: 3;
+    margin: 0.5rem 1rem 0.5rem 0.5rem;
+  }
+
+  .img-7 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 4;
+    margin: 0.5rem 0.5rem 0.5rem 1rem;
+  }
+  .img-8 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row: 4;
+    margin: 0.5rem 1rem 0.5rem 0.5rem;
+  }
+
+  .navigation {
+    justify-content: left;
+    padding-left: 4rem;
+  }
+
+  footer > button {
+    height: 2rem;
+    width: 6rem;
+  }
+
+  .top > button {
+    height: 2rem;
+    width: 8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    display: grid;
+
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .top > ul > button {
+    height: 2rem;
+    width: 8rem;
+  }
+
+  .navigation {
+    justify-content: left;
+    padding-left: 9rem;
+  }
+
+  .div {
+    margin-bottom: 0rem;
+  }
+
+  .two {
+    margin: 0rem 13rem 4.5rem 12rem;
+  }
+
+  .img-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .img-2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row: 1;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .img-3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .img-4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 2;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.05rem;
+  }
+
+  .img-5 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row: 2;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .img-6 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row: 3;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .img-7 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 4;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .img-8 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row: 4;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  footer > button {
+    height: 2rem;
+    width: 6rem;
+  }
 }
